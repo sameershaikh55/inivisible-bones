@@ -1,0 +1,575 @@
+@font-face {
+  font-family: MatSaleh;
+  src: url(../assets/font/mat_saleh/MatSaleh.otf);
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: MatSaleh;
+}
+
+html {
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  html {
+    font-size: 92%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 88%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 84%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 76%;
+  }
+}
+
+.f8 {
+  font-size: 0.5rem;
+}
+
+.f10 {
+  font-size: 0.625rem;
+}
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.f15 {
+  font-size: 0.938rem;
+}
+
+.f16 {
+  font-size: 1rem;
+}
+
+.f18 {
+  font-size: 1.125rem;
+}
+
+.f20 {
+  font-size: 1.25rem;
+}
+
+.f22 {
+  font-size: 1.375rem;
+}
+
+.f24 {
+  font-size: 1.5rem;
+}
+
+.f34 {
+  font-size: 2.125rem;
+}
+
+.f30 {
+  font-size: 1.875rem;
+}
+
+.f35 {
+  font-size: 2.125rem;
+  line-height: 57px;
+}
+
+.f50 {
+  font-size: 3.125rem;
+  line-height: 65px;
+}
+
+.f64 {
+  font-size: 4rem;
+  line-height: 71px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+.color1 {
+  color: #08243b;
+}
+
+.color2 {
+  color: #606060;
+}
+
+.hero_container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d6ff8f), to(#d6ff8f));
+  background: linear-gradient(180deg, #d6ff8f 0%, #d6ff8f 100%);
+  width: 100vw;
+  padding: 3.5rem 0rem 8rem 0rem;
+}
+
+.hero_container .logo_container {
+  position: relative;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_container .logo_container img {
+  width: 100%;
+}
+
+.hero_container .logo_container .i4_stone {
+  position: absolute;
+  width: 45px;
+  bottom: -3rem;
+  left: -2.5rem;
+}
+
+.hero_container .logo_container .i5_stone {
+  position: absolute;
+  width: 50px;
+  right: -5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.hero_container .i1_stone {
+  position: absolute;
+  top: 0%;
+  left: 18%;
+  width: 120px;
+}
+
+.hero_container .i2_stone {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 120px;
+}
+
+.hero_container .i3_stone {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 140px;
+}
+
+.characters {
+  position: relative;
+}
+
+.characters img {
+  min-width: 100vw;
+  height: 100%;
+  margin-top: -14rem;
+}
+
+.social_links {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #cbee8e;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0.8rem;
+}
+
+.social_links a {
+  margin: 0rem 0.32rem;
+}
+
+.social_links a img {
+  width: 25px;
+}
+
+.mint_container {
+  position: relative;
+  background: #ffe66f;
+  margin-top: -17.5rem;
+  width: 100vw;
+  padding-bottom: 4rem;
+  z-index: 1;
+}
+
+.mint_container .inner_mint_container {
+  position: relative;
+}
+
+.mint_container .inner_mint_container::after {
+  content: "";
+  position: absolute;
+  background: url("../assets/mint.svg") no-repeat;
+  height: 120px;
+  width: 100vw;
+  top: -7rem;
+  z-index: -1;
+  background-size: cover;
+}
+
+.mint_container .inner_mint_container .single_count {
+  position: relative;
+}
+
+.mint_container .inner_mint_container .single_count .skele {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mint_container .inner_mint_container .i1_stone {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 100px;
+  z-index: -1;
+}
+
+.mint_container .inner_mint_container .i2_stone {
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  width: 150px;
+  z-index: -1;
+}
+
+.mint_container .inner_mint_container .min_btn {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mint_container .inner_mint_container .min_btn p {
+  color: #d8be41;
+  font-size: 1.5rem;
+}
+
+.mint_container .inner_mint_container .min_btn button {
+  position: relative;
+  background-color: #fff;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 25px;
+}
+
+.mint_container .inner_mint_container .min_btn button .i24_stone {
+  position: absolute;
+  right: -30%;
+  width: 50px;
+  top: -20%;
+}
+
+.mint_container .inner_mint_container .min_btn button .i25_stone {
+  position: absolute;
+  left: -18%;
+  top: 0%;
+  width: 40px;
+}
+
+.mint_container .inner_mint_container .min_btn button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  top: 10%;
+  bottom: 0%;
+  height: 100%;
+  width: 103%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 25px;
+  background: #d8be41;
+  z-index: -1;
+}
+
+.mint_container .counter_container {
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.mint_container .counter_container img {
+  cursor: pointer;
+}
+
+.mint_container .three_boxes {
+  margin-top: 1.8rem;
+  z-index: 1;
+  position: relative;
+}
+
+.mint_container .three_boxes::after {
+  content: "";
+  position: absolute;
+  background: url("../assets/minBottom.svg") no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: right;
+  height: 135px;
+  bottom: -70%;
+  width: 100%;
+  z-index: -1;
+}
+
+.mint_container .three_boxes .three_boxes_inner {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mint_container .three_boxes .three_boxes_inner .box {
+  width: 100%;
+  background: #fff;
+  color: #d8be41;
+  padding: 0.8rem 0rem;
+  border-radius: 30px;
+}
+
+.mint_container .three_boxes .three_boxes_inner .box h4 {
+  font-size: 1.8rem;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+.mint_container .three_boxes .three_boxes_inner .box:nth-child(2) {
+  margin: 0rem 2rem;
+}
+
+.about_container {
+  background: #c5c6ff;
+  position: relative;
+  margin-top: 10rem;
+  z-index: 2;
+}
+
+.about_container::after {
+  content: "";
+  position: absolute;
+  background: url("../assets/aboutTop.svg") no-repeat;
+  background-color: #ffe66f;
+  height: 200px;
+  width: 100vw;
+  top: 0%;
+  background-size: cover;
+  margin-top: -10rem;
+  z-index: -1;
+}
+
+.about_container .inner_about_container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.about_container .inner_about_container .row {
+  z-index: 2;
+}
+
+.about_container .inner_about_container .row .col-6:nth-child(1) img {
+  z-index: 2;
+}
+
+.about_container .inner_about_container .row .col-6 {
+  margin-top: -10rem;
+}
+
+.about_container .inner_about_container .row .col-6 img:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.about_container .inner_about_container .row .col-6:nth-child(2) {
+  padding-top: 8rem;
+  height: 1100px;
+}
+
+.about_container .inner_about_container .row .col-6:nth-child(2) .box {
+  border-radius: 50px;
+}
+
+.about_container .inner_about_container .row .col-6:nth-child(2) .about_logo {
+  position: absolute;
+  top: 1%;
+}
+
+.about_container .inner_about_container .row .col-6:nth-child(2) p {
+  font-size: 1.5rem;
+  line-height: 22px;
+  color: #140095;
+}
+
+.roadmap_container {
+  background: url("../assets/roadmap.svg") no-repeat;
+  width: 100vw;
+  background-size: cover;
+  padding-top: 14rem;
+  padding-bottom: 8rem;
+}
+
+.roadmap_container .inner_roadmap_container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roadmap_container .inner_roadmap_container img {
+  height: 220px;
+}
+
+.roadmap_container .inner_roadmap_container .col-7 {
+  font-size: 1.2rem;
+  color: #b97e48;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.roadmap_container .inner_roadmap_container .col-5 {
+  position: relative;
+}
+
+.roadmap_container .inner_roadmap_container .col-5 h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  line-height: 94px;
+  margin-bottom: 0px;
+  font-size: 5rem;
+}
+
+.display_container {
+  position: relative;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  z-index: 1;
+}
+
+.faq_container {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9bffc1), to(#9bffc1));
+  background: linear-gradient(180deg, #9bffc1 0%, #9bffc1 100%);
+  padding-bottom: 6rem;
+}
+
+.faq_container::after {
+  content: "";
+  position: absolute;
+  background: url("../assets/faq.png") no-repeat;
+  height: 250px;
+  width: 100vw;
+  top: 8%;
+  background-size: cover;
+  background-position-x: center;
+  margin-top: -14rem;
+  z-index: 2;
+}
+
+.faq_container .inner_faq_container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12rem;
+}
+
+.faq_container .inner_faq_container .box {
+  background: #140095;
+  border-radius: 35px;
+}
+
+.faq_container .inner_faq_container .box .question {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff));
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  border: 10px solid #140095;
+  border-radius: 35px;
+  padding: 1rem 1.4rem 1.2rem 1.4rem;
+  color: #140095;
+  font-size: 1.2rem;
+  line-height: 22px;
+}
+
+.faq_container .inner_faq_container .box .answer {
+  padding: 0.2rem 2rem 1.5rem 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 22px;
+}
+
+.footer_container {
+  background: url("../assets/footer.svg") no-repeat;
+  height: 250px;
+  width: 100vw;
+  background-size: cover;
+  background-position-x: center;
+  background-color: #9bffc1;
+  position: relative;
+}
+
+.footer_container .img_cont {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer_container .img_cont img {
+  margin-top: -3.5rem;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
