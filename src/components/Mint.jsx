@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import i1 from "../assets/mint/i1.svg";
 import i2 from "../assets/mint/i2.svg";
 import i24 from "../assets/mint/i3.svg";
@@ -14,22 +14,36 @@ import i5 from "../assets/mintCount/i5.svg";
 import mintNow from "../assets/mintNow.png";
 
 const Mint = () => {
+	const [total, setTotal] = useState(5);
 	const counter = [i11, i12, i3, i4, i5];
+
+	const add = () => {
+		if (total !== 5) {
+			setTotal(total + 1);
+		}
+	};
+
+	const less = () => {
+		if (total !== 1) {
+			setTotal(total - 1);
+		}
+	};
 
 	return (
 		<div className="mint_container">
 			<div className="inner_mint_container">
 				<div className="counter_container d-flex justify-content-center">
-					<img className="minus" src={minus} alt="" />
-					{counter.map((item, i) => {
+					<h1 className="total_count display-1 text-white">{total}</h1>
+					<img onClick={less} className="minus" src={minus} alt="" />
+					{counter.slice(0, total).map((item, i) => {
 						return (
 							<div className="single_count">
-								<img className="mx-2" key={i} src={item} alt="" />
+								<img className="bg mx-2" key={i} src={item} alt="" />
 								<img className="skele" src={skeleton} alt="" />
 							</div>
 						);
 					})}
-					<img className="plus" src={plus} alt="" />
+					<img onClick={add} className="plus" src={plus} alt="" />
 				</div>
 
 				<div className="min_btn d-flex flex-column justify-content-center pt-1 pt-sm-5 text-center">

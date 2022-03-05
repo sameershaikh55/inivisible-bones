@@ -7,7 +7,7 @@ const Faq = () => {
 		<div className="faq_container">
 			<div className="inner_faq_container">
 				<div className="container-fluid">
-					<img src={faq2} alt="" />
+					<img className="w-100" src={faq2} alt="" />
 					<br />
 					{[1, 1, 1, 1].map((item, i) => {
 						return (
