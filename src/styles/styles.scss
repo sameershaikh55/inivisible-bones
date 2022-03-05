@@ -15,10 +15,18 @@ $color1: #08243b;
 $color2: #606060;
 // VARIABLES END
 
+@mixin screen_width {
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0rem 0.4rem;
+}
+
 // GLOBAL START
 html {
 	width: 100%;
 	font-size: 100%;
+	overflow-x: hidden;
 }
 body {
 	overflow-x: hidden;
@@ -361,9 +369,7 @@ body {
 		}
 
 		.three_boxes_inner {
-			max-width: 900px;
-			margin-left: auto;
-			margin-right: auto;
+			@include screen_width();
 
 			.box {
 				width: 100%;
@@ -408,21 +414,19 @@ body {
 	}
 
 	.inner_about_container {
-		max-width: 900px;
-		margin-left: auto;
-		margin-right: auto;
+		@include screen_width();
 		z-index: 2;
 
 		.row {
 			z-index: 2;
 
-			.col-6:nth-child(1) {
+			.col_6_first {
 				img {
 					z-index: 2;
 				}
 			}
 
-			.col-6 {
+			.col_6 {
 				margin-top: -10rem;
 
 				img:nth-child(2) {
@@ -430,7 +434,7 @@ body {
 				}
 			}
 
-			.col-6:nth-child(2) {
+			.col_6_second {
 				padding-top: 8rem;
 				height: 1100px;
 
@@ -457,28 +461,27 @@ body {
 // ROADMAP START
 .roadmap_container {
 	background: url("../assets/roadmap.svg") no-repeat;
+	background-position-x: center;
 	width: 100vw;
 	background-size: cover;
 	padding-top: 14rem;
 	padding-bottom: 8rem;
 
 	.inner_roadmap_container {
-		max-width: 900px;
-		margin-left: auto;
-		margin-right: auto;
+		@include screen_width();
 
 		img {
 			height: 220px;
 		}
 
-		.col-7 {
+		.text_cont {
 			font-size: 1.2rem;
 			color: #b97e48;
 			line-height: 22px;
 			font-weight: 500;
 		}
 
-		.col-5 {
+		.img_cont {
 			position: relative;
 
 			h1 {
@@ -525,9 +528,7 @@ body {
 	}
 
 	.inner_faq_container {
-		max-width: 900px;
-		margin-left: auto;
-		margin-right: auto;
+		@include screen_width();
 		padding-top: 12rem;
 
 		.box {
@@ -577,3 +578,197 @@ body {
 	}
 }
 // FOOTER END
+
+// MEDIA START
+@media screen and (max-width: 1050px) {
+	.about_container::after {
+		height: 165px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.about_container .inner_about_container .row .col_6_second .about_logo {
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.about_container .inner_about_container .row .col_6_second {
+		display: flex;
+		justify-content: center;
+	}
+	.about_container .inner_about_container .row .col_6_second {
+		height: 100%;
+		padding-bottom: 2rem;
+	}
+	.about_container .inner_about_container .row .col_6_second .box {
+		z-index: 1;
+	}
+	.res_elem {
+		position: absolute;
+		top: 20%;
+		right: -1%;
+		height: 200px;
+		width: 200%;
+		background: #c5c6ff;
+		z-index: 1;
+	}
+	.mint_container .three_boxes .three_boxes_inner {
+		padding: 0rem 2rem !important;
+	}
+	.mint_container .inner_mint_container .i1_stone,
+	.mint_container .inner_mint_container .i2_stone,
+	.hero_container .i3_stone,
+	.hero_container .i2_stone,
+	.hero_container .i1_stone {
+		display: none;
+	}
+	.mint_container .counter_container {
+		top: -3rem;
+		min-width: 555px;
+	}
+	.mint_container .inner_mint_container .single_count .skele {
+		width: 40px;
+	}
+	.characters {
+		height: 380px;
+
+		img {
+			object-fit: cover;
+		}
+	}
+	.hero_container {
+		padding: 3.5rem 0rem 12rem 0rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.display_container {
+		img {
+			height: 300px;
+			object-fit: cover;
+		}
+	}
+	.mint_container .three_boxes .three_boxes_inner .box:nth-child(2) {
+		margin: 1rem 0rem;
+	}
+
+	.mint_container .inner_mint_container .min_btn {
+		padding: 0rem 2.4rem;
+	}
+	.mint_container .counter_container {
+		min-width: 344px;
+	}
+	.logo_container {
+		padding: 0rem 1rem;
+	}
+	.mint_container .inner_mint_container::after {
+		top: -8rem;
+		height: 130px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.res_elem {
+		position: absolute;
+		top: 10%;
+		right: -2%;
+		height: 200px;
+		width: 200%;
+		background: #c5c6ff;
+		z-index: 1;
+	}
+	.display_container {
+		img {
+			height: 200px;
+			object-fit: cover;
+		}
+	}
+	.roadmap_container .inner_roadmap_container .img_cont h1 {
+		font-size: 3.2rem;
+	}
+	.roadmap_container .inner_roadmap_container .text_cont {
+		line-height: 20px;
+	}
+	.roadmap_container {
+		background: url("../assets/aboutRes2.svg") no-repeat;
+		background-position-x: center;
+		width: 100vw;
+		background-size: cover;
+		padding-top: 14rem;
+		padding-bottom: 8rem;
+	}
+	.roadmap_container .inner_roadmap_container img {
+		height: 100%;
+	}
+	.roadmap_container {
+		padding-top: 2rem;
+	}
+	.faq_container::after {
+		content: "";
+		height: 184px;
+		margin-top: -14rem;
+	}
+	.faq_container .inner_faq_container {
+		padding-top: 8rem;
+	}
+	.footer_container .img_cont img {
+		padding: 0rem 3rem;
+	}
+	.hero_container {
+		padding: 5.5rem 0rem 12rem 0rem;
+	}
+	.logo_container {
+		padding: 0rem 2rem;
+	}
+	.characters img {
+		margin-top: -15rem;
+	}
+	.mint_container {
+		margin-top: 0rem;
+	}
+	.mint_container .inner_mint_container::after {
+		top: -12rem;
+		height: 180px;
+	}
+	.mint_container .counter_container {
+		top: -5.5rem;
+	}
+	.mint_container .inner_mint_container .single_count {
+		img {
+			width: 80%;
+		}
+	}
+	.minus,
+	.plus {
+		width: 30px;
+	}
+	.mint_container .inner_mint_container .single_count .skele {
+		width: 26px;
+	}
+	.footer_container {
+		height: 170px;
+	}
+}
+
+@media screen and (min-width: 1450px) {
+	.faq_container::after {
+		height: 305px;
+		top: 5%;
+	}
+	.roadmap_container {
+		padding-top: 18rem;
+	}
+	.mint_container .inner_mint_container::after {
+		height: 168px;
+		width: 100vw;
+		top: -10rem;
+	}
+	.characters img {
+		margin-top: -17rem;
+	}
+	.hero_container {
+		padding: 4.5rem 0rem 8rem 0rem;
+	}
+}
+// MEDIA END

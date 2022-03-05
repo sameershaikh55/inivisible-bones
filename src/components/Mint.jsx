@@ -20,7 +20,7 @@ const Mint = () => {
 		<div className="mint_container">
 			<div className="inner_mint_container">
 				<div className="counter_container d-flex justify-content-center">
-					<img src={minus} alt="" />
+					<img className="minus" src={minus} alt="" />
 					{counter.map((item, i) => {
 						return (
 							<div className="single_count">
@@ -29,10 +29,10 @@ const Mint = () => {
 							</div>
 						);
 					})}
-					<img src={plus} alt="" />
+					<img className="plus" src={plus} alt="" />
 				</div>
 
-				<div className="min_btn d-flex flex-column justify-content-center pt-5 text-center">
+				<div className="min_btn d-flex flex-column justify-content-center pt-1 pt-sm-5 text-center">
 					<p className="mb-1">1,111 / 5,555</p>
 					<button>
 						<img src={mintNow} alt="" />
@@ -43,7 +43,7 @@ const Mint = () => {
 				</div>
 
 				<div className="three_boxes">
-					<div className="three_boxes_inner d-flex">
+					<div className="three_boxes_inner d-flex flex-column flex-md-row px-5 px-md-0">
 						<div className="box text-center">
 							<h4>
 								0.025 ETH <br /> each + gas

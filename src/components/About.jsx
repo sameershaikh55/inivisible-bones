@@ -8,17 +8,18 @@ const About = () => {
 			<div className="inner_about_container">
 				<div className="container-fluid">
 					<div className="row gx-4">
-						<div className="col-6 position-relative">
+						<div className="col_6 col_6_first col-6 position-relative d-none d-lg-block">
 							<div className="position-absolute pe-2">
 								{[1, 1].map(() => {
 									return <img className="w-100" src={aboutImg} alt="" />;
 								})}
 							</div>
 						</div>
-						<div className="col-6 position-relative self-align-center">
+						<div className="col_6 col_6_second col-12 col-lg-6 self-align-center position-relative">
 							<img className="about_logo w-100" src={about} alt="" />
 
 							<div className="d-flex flex-column align-items-center justify-content-center h-100">
+								<div className="res_elem"></div>
 								<p className="mb-0 text-center box bg-white p-4">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
 									non nisl efficitur, porta ligula eget, auctor ex. Pellentesque

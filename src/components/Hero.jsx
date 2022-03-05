@@ -8,6 +8,7 @@ import i3 from "../assets/heroStones/i3.svg";
 import i4 from "../assets/heroStones/i4.svg";
 import i5 from "../assets/heroStones/i5.svg";
 import characters from "../assets/characters.svg";
+import characters2 from "../assets/hero2.svg";
 
 // COMPONENTS
 import Socials from "./Socials";
@@ -33,7 +34,8 @@ const Hero = () => {
 			</div>
 
 			<div className="characters">
-				<img src={characters} alt="" />
+				<img className="d-none d-md-block" src={characters} alt="" />
+				<img className="d-block d-md-none" src={characters2} alt="" />
 			</div>
 		</>
 	);
